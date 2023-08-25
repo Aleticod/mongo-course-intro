@@ -1,0 +1,14 @@
+use("platzi_store")
+
+db.products.updateOne(
+    {
+        _id: 2
+    },
+    {
+        $inc: {
+            price: 10000
+        }
+    }
+)
+
+db.products.find()
