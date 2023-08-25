@@ -1,0 +1,18 @@
+use("platzi_store")
+
+db.products.updateOne(
+    // query -> condicion
+    {
+        _id: 4
+    },
+    // change
+    {
+        $set: {
+            name: "Producto cambiado",
+            price: 1000,
+            new_attr: "off"
+        }
+    }
+)
+
+db.products.find()
