@@ -1,0 +1,3 @@
+use("platzi_prueba")
+
+db.productos.find()
